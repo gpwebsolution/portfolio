@@ -1,11 +1,15 @@
 <p align="center">
+  <img src="images/readme.png" alt="portfolio" width="500">
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
   <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
   <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
 </p>
 
-<h1 align="center">✨ Gregório Ponciano - Full Stack Developer Portfolio</h1>
+<h1 align="center">✨ GPWebSolution - Full Stack Developer Portfolio</h1>
 
 <p align="center">
   <strong>Meu portfólio pessoal apresentando projetos, habilidades e minha jornada como desenvolvedor especializado em ecossistema Laravel e soluções Web.</strong>
@@ -19,7 +23,7 @@
 
 ## 🚀 Sobre Mim
 
-Olá! Sou o **Gregório Ponciano**, desenvolvedor Full Stack apaixonado por transformar ideias em código eficiente. Tenho vasta experiência no framework **Laravel** e na criação de plataformas complexas, incluindo sistemas de iGaming (como o **MarioBET**), E-commerces e ferramentas de gestão de pedidos.
+Olá! Sou o **GPWebSolution**, desenvolvedor Full Stack apaixonado por transformar ideias em código eficiente. Tenho vasta experiência no framework **Laravel** e na criação de plataformas complexas, incluindo sistemas de iGaming (como o **MarioBET**), E-commerces e ferramentas de gestão de pedidos.
 
 ### 🛠️ Minha Stack Principal
 - **Backend:** PHP (Laravel), MySQL, Node.js.
