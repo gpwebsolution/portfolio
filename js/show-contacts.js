@@ -29,16 +29,22 @@
     }
   }
 
+  function toggleContacts() {
+    if (!isMobile()) return;
+    headerContacts.classList.toggle('contacts-visible');
+    syncVisibility();
+  }
+
   window.addEventListener('resize', function () {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(syncVisibility, RESIZE_DEBOUNCE_MS);
   });
 
-  window.showContacts = function () {
-    if (!isMobile()) return;
-    headerContacts.classList.toggle('contacts-visible');
-    syncVisibility();
-  };
+  document.addEventListener('DOMContentLoaded', function () {
+    if (showButton) {
+      showButton.addEventListener('click', toggleContacts);
+    }
+  });
 
   syncVisibility();
 })();

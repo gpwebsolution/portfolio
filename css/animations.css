@@ -1,18 +1,5 @@
 @charset "UTF-8";
 
-:root {
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --ease-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  --duration-slow: 800ms;
-  --duration-normal: 600ms;
-  --duration-fast: 300ms;
-  --accent: #00d4ff;
-  --bg-card: #18182a;
-  --text-primary: #e8e8f0;
-  --text-secondary: #8888a0;
-}
-
 /* ===== HARDWARE ACCELERATION ===== */
 .hw-accelerated {
   will-change: transform, opacity;
@@ -136,17 +123,6 @@
 }
 
 /* ===== SYNCHRONIZED SVG/IMAGE HOVER ANIMATIONS ===== */
-.estou-fazendo,
-.link-loja,
-.div-info,
-.guia-link,
-.portfolio-item {
-  position: relative;
-  transition: all 0.4s var(--ease-out-expo);
-  overflow: hidden;
-}
-
-/* SVG/Image sync animation on box hover */
 .estou-fazendo svg,
 .estou-fazendo img,
 .link-loja svg,
@@ -154,15 +130,12 @@
 .div-info svg,
 .div-info img,
 .guia-link svg,
-.guia-link img,
-.portfolio-item svg,
-.portfolio-item img {
+.guia-link img {
   transition: all 0.5s var(--ease-out-expo);
   transform: scale(1) translateY(0);
   opacity: 1;
 }
 
-/* On box hover - synchronized animation */
 .estou-fazendo:hover svg,
 .estou-fazendo:hover img {
   transform: scale(1.08) translateY(-4px);
@@ -187,48 +160,10 @@
   opacity: 0.9;
 }
 
-.portfolio-item:hover svg,
-.portfolio-item:hover img {
-  transform: scale(1.06) translateY(-5px);
-  filter: drop-shadow(0 10px 20px rgba(0, 212, 255, 0.2));
-}
-
-/* ===== MODERN BOX STYLING ===== */
-.estou-fazendo {
-  background: linear-gradient(135deg, var(--bg-card), rgba(24, 24, 42, 0.8));
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  padding: 24px;
-  cursor: pointer;
-}
-
-.estou-fazendo:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 212, 255, 0.12);
-  border-color: rgba(0, 212, 255, 0.2);
-}
-
-.link-loja {
-  background: linear-gradient(135deg, var(--bg-card), rgba(24, 24, 42, 0.8));
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 12px;
-  padding: 20px;
-  transition: all 0.4s var(--ease-out-expo);
-}
-
-.link-loja:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 24px rgba(0, 212, 255, 0.1);
-  border-color: rgba(0, 212, 255, 0.15);
-}
-
-/* ===== MODERN TYPOGRAPHY ===== */
+/* ===== MODERN TYPOGRAPHY (animation-specific only) ===== */
 .estou-fazendo h3,
 .link-loja h1,
 .guia-link h3 {
-  color: var(--text-primary);
-  font-weight: 600;
-  margin: 12px 0 8px 0;
   transition: color 0.3s var(--ease-out-expo);
 }
 
@@ -238,39 +173,7 @@
   color: var(--accent);
 }
 
-.estou-fazendo p,
-.link-loja p,
-.guia-link p {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  line-height: 1.6;
-  margin: 4px 0;
-}
-
-/* ===== LINK STYLING ===== */
-a.link-guia,
-a.btn-download {
-  display: inline-block;
-  color: var(--text-secondary);
-  padding: 10px 18px;
-  margin: 6px 0;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  transition: all 0.3s var(--ease-out-expo);
-  font-size: 0.95rem;
-}
-
-a.link-guia:hover,
-a.btn-download:hover {
-  color: var(--accent);
-  background: rgba(0, 212, 255, 0.08);
-  border-color: rgba(0, 212, 255, 0.2);
-  transform: translateX(6px);
-  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.1);
-}
-
-
+/* ===== ACCESSIBILITY ===== */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

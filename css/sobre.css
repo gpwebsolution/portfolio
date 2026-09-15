@@ -1,16 +1,6 @@
 @charset "UTF-8";
 
-:root {
-  --bg-card: #18182a;
-  --accent: #00d4ff;
-  --accent-glow: rgba(0, 212, 255, 0.15);
-  --text-primary: #e8e8f0;
-  --text-secondary: #8888a0;
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --radius-md: 12px;
-  --radius-lg: 16px;
-  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
-}
+
 
 .content {
   margin: 0px 20px 20px 20px;
@@ -35,7 +25,7 @@
   height: 120px;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--bg-card), rgba(24, 24, 42, 0.8));
+  background: linear-gradient(135deg, var(--bg-card), var(--card-hover-bg));
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);

@@ -3,13 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de GPWebSolution — Desenvolvedor de Sistemas especializado em Laravel, PHP e soluções web. Conheça meus projetos e habilidades.">
+  <meta name="author" content="GPWebSolution">
+  <meta name="keywords" content="desenvolvedor web, Laravel, PHP, portfólio, sites profissionais, GPWebSolution">
+  <meta property="og:title" content="GPWebSolution - Desenvolvedor de Sistemas">
+  <meta property="og:description" content="Portfólio profissional apresentando projetos, habilidades e soluções web.">
+  <meta property="og:image" content="images/gpweb.jpeg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="theme-color" content="#0a0a0f">
+  <link rel="stylesheet" href="css/variables.css">
+  <script>
+    (function() {
+      var t = localStorage.getItem('gpweb-theme');
+      if (t === 'light' || t === 'dark') {
+        document.documentElement.setAttribute('data-theme', t);
+      } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/sobre.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/contatos.css">
   <link rel="stylesheet" href="css/guia.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="icon" type="image/jpeg" href="images/gpweb.jpeg">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>GPWeb - Desenvolvedor Web</title>
 </head>
@@ -17,7 +37,7 @@
 
   <header class="header header-animate">
     <div class="div-p-header">
-      <p class="p-header" id="show-contacts" onclick="showContacts()">Show Contacts</p>
+      <p class="p-header" id="show-contacts">Show Contacts</p>
     </div>
     <div class="container-header">
       <div class="div-img"><img src="images/gpweb.jpeg" alt="perfil" class="img-perfil"></div>
@@ -26,13 +46,13 @@
         <p class="p-dev-web">Desenvolvedor de Sistemas</p>
       </div>
     </div><br>
-    <hr style="width: 80%; margin: auto; border: 1px solid rgba(167, 153, 153, 0.349);"> <br>
+    <hr style="width: 80%; margin: auto; border: 1px solid var(--border-subtle);"> <br>
     <div class="header-contact" id="header-contacts">
       <div class="div-info" data-delay="1">
         <div class="icon"><i class="material-icons">mail</i></div>
         <div class="email">
           <p class="p-info-header">Email</p>
-          <p title="gpwebsolution.2020@gmail.com" 
+          <p title="gpwebsolution.1010@gmail.com"
             style="display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden;">
             gpwebsolution.1010@gmail.com
           </p>
@@ -60,9 +80,9 @@
         </div>
       </div>
       <div class="redes" data-delay="5">
-        <a href="https://www.facebook.com/profile.php?id=61580637924160" target="_blank" class="a-header"><img src="images/facebook.jpg" alt="facebook" class="img-redes-header"></a>
-        <a href="https://api.whatsapp.com/send/?phone=5514991761256&text=Ol%C3%A1%2C+Td+bem%3F+Como+aumentar+minhas+vendas?%3F&type=phone_number&app_absent=0" target="_blank" class="a-header"><img src="images/whatsapp.jpg" alt="whatsapp" class="img-redes-header"></a>
-        <a href="https://www.instagram.com/gpwebsolution/" target="_blank" class="a-header"><img src="images/instagram.jpg" alt="instagram" class="img-redes-header"></a>
+        <a href="https://www.facebook.com/profile.php?id=61580637924160" target="_blank" rel="noopener noreferrer" class="a-header"><img src="images/facebook.jpg" alt="facebook" class="img-redes-header"></a>
+        <a href="https://api.whatsapp.com/send/?phone=5514991761256&text=Ol%C3%A1%2C+Td+bem%3F+Como+aumentar+minhas+vendas%3F&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="a-header"><img src="images/whatsapp.jpg" alt="whatsapp" class="img-redes-header"></a>
+        <a href="https://www.instagram.com/gpwebsolution/" target="_blank" rel="noopener noreferrer" class="a-header"><img src="images/instagram.jpg" alt="instagram" class="img-redes-header"></a>
       </div>
     </div>
   </header>
@@ -76,28 +96,28 @@
 
       <div class="container-estou-fazendo">
         <div class="estou-fazendo reveal-scale" id="web-design" data-delay="4">
-          <img src="images/sobre/icon-design.svg" class="img-estou-fazendo" alt="foto">
+          <img src="images/sobre/icon-design.svg" class="img-estou-fazendo" alt="ícone de desenvolvimento web">
           <aside>
             <h3>Desenvolvimento Web</h3>
             <p>Desenvolvimento de sites de alta qualidade em nível profissional.</p>
           </aside>
         </div>
         <div class="estou-fazendo reveal-scale" id="desenvolvimento-web" data-delay="5">
-          <img src="images/sobre/icon-dev.svg" class="img-estou-fazendo" alt="foto">
+          <img src="images/sobre/icon-dev.svg" class="img-estou-fazendo" alt="ícone de web design">
           <aside>
             <h3>Web design</h3>
             <p>O design mais moderno e de alta qualidade feito em nível profissional.</p>
           </aside>
         </div>
         <div class="estou-fazendo reveal-scale" id="aplicativos-moveis" data-delay="6">
-          <img src="images/sobre/icon-app.svg" class="img-estou-fazendo" alt="foto">
+          <img src="images/sobre/icon-app.svg" class="img-estou-fazendo" alt="ícone de aplicativos móveis">
           <aside>
             <h3>Aplicativos móveis</h3>
             <p>Desenvolvimento profissional de aplicativos para iOS e Android.</p>
           </aside>
         </div>
         <div class="estou-fazendo estou-fazendo-footer reveal-scale" id="fotografia" data-delay="7">
-          <img src="images/sobre/icon-photo.svg" class="img-estou-fazendo" alt="foto">
+          <img src="images/sobre/icon-photo.svg" class="img-estou-fazendo" alt="ícone de fotografia">
           <aside class="aside-footer">
             <h3>Fotografia</h3>
             <p>Eu faço fotos de alta qualidade de qualquer categoria em nível profissional.</p>
@@ -107,79 +127,84 @@
     </div>
 
     <div class="content" id="div2"> <!-- Guia do Programador -->
-      <h1 class="h1-guia reveal">𝙂𝙪𝙞𝙖 𝙙𝙤 𝙋𝙧𝙤𝙜𝙧𝙖𝙢𝙖𝙙𝙤𝙧</h1><br>
+      <h1 class="h1-guia reveal">Guia do Programador</h1><br>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="1" onclick="toggleContent('guia1')"><img src="images/guia/html.png" alt="img-html" class="img-guia"> HTML</a><br>
+      <div class="guia-search-wrapper reveal" data-delay="1">
+        <input type="text" id="guia-search" class="guia-search" placeholder="Buscar tópicos..." aria-label="Buscar tópicos do guia">
+      </div>
+
+      <div id="guia-list">
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="1" data-guia="guia1"><img src="images/guia/html.png" alt="HTML" class="img-guia"> HTML</a><br>
       <div id="guia1" class="guia">
         <p><strong>HTML</strong> - Linguagem de marcação para estruturar o conteúdo de páginas web.</p>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">📖 Documentação MDN</a><br>
-        <a href="https://html.spec.whatwg.org/" target="_blank">📁 Especificação WHATWG</a><br>
-        <a href="https://www.w3schools.com/html/" target="_blank">🎓 W3Schools</a><br>
-        <a href="https://github.com/whatwg/html" target="_blank">⚙️ GitHub WHATWG</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">Documentação MDN</a><br>
+        <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">Especificação WHATWG</a><br>
+        <a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools</a><br>
+        <a href="https://github.com/whatwg/html" target="_blank" rel="noopener noreferrer">GitHub WHATWG</a><br>
         <h4>Exercícios:</h4>
-        <a href="https://gregorioponciano.github.io/html/ex001/listas.html" target="_blank">Listas</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex002/index.html" target="_blank">Âncoras</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex003/audio.html" target="_blank">Áudio</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex004/video.html" target="_blank">Vídeo</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex007/fonte1.html" target="_blank">Fonte1</a>
-        <a href="https://gregorioponciano.github.io/html/ex007/fonte2.html" target="_blank">Fonte2</a><br>
-        <a href="download/tabela.rar" target="_blank" class="btn-download">Tabela (download)</a><br>
-        <a href="download/formulario.rar" target="_blank" class="btn-download">Formulário</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex001/listas.html" target="_blank" rel="noopener noreferrer">Listas</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex002/index.html" target="_blank" rel="noopener noreferrer">Âncoras</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex003/audio.html" target="_blank" rel="noopener noreferrer">Áudio</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex004/video.html" target="_blank" rel="noopener noreferrer">Vídeo</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex007/fonte1.html" target="_blank" rel="noopener noreferrer">Fonte1</a>
+        <a href="https://gregorioponciano.github.io/html/ex007/fonte2.html" target="_blank" rel="noopener noreferrer">Fonte2</a><br>
+        <a href="download/tabela.rar" target="_blank" rel="noopener noreferrer" class="btn-download">Tabela (download)</a><br>
+        <a href="download/formulario.rar" target="_blank" rel="noopener noreferrer" class="btn-download">Formulário</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="2" onclick="toggleContent('guia2')"> <img src="images/guia/css.png" alt="img-css" class="img-guia"> Css</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="2" data-guia="guia2"> <img src="images/guia/css.png" alt="CSS" class="img-guia"> Css</a><br>
       <div id="guia2" class="guia">
         <p><strong>CSS</strong> - Folhas de estilo para aparência e layout de páginas web.</p>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">📖 Documentação MDN</a><br>
-        <a href="https://www.w3.org/Style/CSS/" target="_blank">📁 W3C CSS</a><br>
-        <a href="https://css-tricks.com/" target="_blank">🎓 CSS-Tricks</a><br>
-        <a href="https://github.com/nicolo-ribaudo/tc39-proposal-css-working" target="_blank">⚙️ GitHub W3C</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Documentação MDN</a><br>
+        <a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer">W3C CSS</a><br>
+        <a href="https://css-tricks.com/" target="_blank" rel="noopener noreferrer">CSS-Tricks</a><br>
+        <a href="https://github.com/nicolo-ribaudo/tc39-proposal-css-working" target="_blank" rel="noopener noreferrer">GitHub W3C</a><br>
         <h4>Exercícios:</h4>
-        <a href="https://gregorioponciano.github.io/html/ex006/cor.html" target="_blank">Cor</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex008/hover.html" target="_blank">Hover</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex016/filtros.html" target="_blank">Filtros</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex013/mobilefirst/index.html" target="_blank">MediaQuery</a>
+        <a href="https://gregorioponciano.github.io/html/ex006/cor.html" target="_blank" rel="noopener noreferrer">Cor</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex008/hover.html" target="_blank" rel="noopener noreferrer">Hover</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex016/filtros.html" target="_blank" rel="noopener noreferrer">Filtros</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex013/mobilefirst/index.html" target="_blank" rel="noopener noreferrer">MediaQuery</a>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="3" onclick="toggleContent('guia3')"><img src="images/guia/js.png" alt="img-js" class="img-guia"> JavaScript</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="3" data-guia="guia3"><img src="images/guia/js.png" alt="JavaScript" class="img-guia"> JavaScript</a><br>
       <div id="guia3" class="guia">
         <p><strong>JavaScript</strong> - Linguagem de programação para interatividade e lógica no navegador e servidor.</p>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">📖 Documentação MDN</a><br>
-        <a href="https://tc39.es/ecma262/" target="_blank">📁 Especificação ECMA-262</a><br>
-        <a href="https://javascript.info/" target="_blank">🎓 JavaScript.info</a><br>
-        <a href="https://github.com/tc39/ecma262" target="_blank">⚙️ GitHub TC39</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Documentação MDN</a><br>
+        <a href="https://tc39.es/ecma262/" target="_blank" rel="noopener noreferrer">Especificação ECMA-262</a><br>
+        <a href="https://javascript.info/" target="_blank" rel="noopener noreferrer">JavaScript.info</a><br>
+        <a href="https://github.com/tc39/ecma262" target="_blank" rel="noopener noreferrer">GitHub TC39</a><br>
         <h4>Exercícios:</h4>
-        <a href="https://gregorioponciano.github.io/html/ex014/menu.html" target="_blank">Menu</a><br>
-        <a href="https://gregorioponciano.github.io/html/ex015/index.html" target="_blank">Modal</a>
+        <a href="https://gregorioponciano.github.io/html/ex014/menu.html" target="_blank" rel="noopener noreferrer">Menu</a><br>
+        <a href="https://gregorioponciano.github.io/html/ex015/index.html" target="_blank" rel="noopener noreferrer">Modal</a>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="4" onclick="toggleContent('guia5')"> <img src="images/guia/php.webp" alt="img-php" class="img-guia"> PHP</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="4" data-guia="guia5"> <img src="images/guia/php.webp" alt="PHP" class="img-guia"> PHP</a><br>
       <div id="guia5" class="guia">
         <p><strong>PHP</strong> - Linguagem de script do lado do servidor para desenvolvimento web dinâmico.</p>
-        <a href="https://www.php.net/docs.php" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/php/php-src" target="_blank">⚙️ GitHub PHP</a><br>
-        <a href="https://www.w3schools.com/php/" target="_blank">🎓 W3Schools PHP</a><br>
-        <a href="https://phptherightway.com/" target="_blank">📚 PHP: The Right Way</a><br>
+        <a href="https://www.php.net/docs.php" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/php/php-src" target="_blank" rel="noopener noreferrer">GitHub PHP</a><br>
+        <a href="https://www.w3schools.com/php/" target="_blank" rel="noopener noreferrer">W3Schools PHP</a><br>
+        <a href="https://phptherightway.com/" target="_blank" rel="noopener noreferrer">PHP: The Right Way</a><br>
         <a href="download/cursophp.rar" class="btn-download">Curso PHP</a>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="4" onclick="toggleContent('guia6')"> <img src="images/guia/python3.png" alt="img-python" class="img-guia"> Python</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="4" data-guia="guia6"> <img src="images/guia/python3.png" alt="Python" class="img-guia"> Python</a><br>
       <div id="guia6" class="guia">
         <p><strong>Python</strong> - Linguagem de programação versátil para web, ciência de dados, IA e automação.</p>
-        <a href="https://docs.python.org/pt-br/3/" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/python/cpython" target="_blank">⚙️ GitHub CPython</a><br>
-        <a href="https://realpython.com/" target="_blank">🎓 Real Python</a><br>
-        <a href="https://www.w3schools.com/python/" target="_blank">📚 W3Schools Python</a><br>
-        <a href="https://python.org.br/" target="_blank">🇧🇷 Python Brasil</a><br>
+        <a href="https://docs.python.org/pt-br/3/" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/python/cpython" target="_blank" rel="noopener noreferrer">GitHub CPython</a><br>
+        <a href="https://realpython.com/" target="_blank" rel="noopener noreferrer">Real Python</a><br>
+        <a href="https://www.w3schools.com/python/" target="_blank" rel="noopener noreferrer">W3Schools Python</a><br>
+        <a href="https://python.org.br/" target="_blank" rel="noopener noreferrer">Python Brasil</a><br>
         <a href="download/cursophp.rar" class="btn-download">Curso Python3</a>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="5" onclick="toggleContent('guia7')"> <img src="images/guia/ngrok.png" alt="img-ngrok" class="img-guia"> NGROK</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="5" data-guia="guia7"> <img src="images/guia/ngrok.png" alt="NGROK" class="img-guia"> NGROK</a><br>
       <div id="guia7" class="guia">
         <p><strong>NGROK</strong> - Tunnel local exposto à internet para testes e webhooks.</p>
-        <a href="https://ngrok.com/docs" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/inconshreveable/ngrok" target="_blank">⚙️ GitHub NGROK</a><br>
-        <a href="https://dashboard.ngrok.com/" target="_blank">🔧 Dashboard</a><br>
+        <a href="https://ngrok.com/docs" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/inconshreveable/ngrok" target="_blank" rel="noopener noreferrer">GitHub NGROK</a><br>
+        <a href="https://dashboard.ngrok.com/" target="_blank" rel="noopener noreferrer">Dashboard</a><br>
         <h4>Comandos básicos:</h4>
         <p>1. Configurar authtoken:</p>
         <p><code>ngrok config add-authtoken (seu token)</code></p>
@@ -187,144 +212,145 @@
         <p><code>ngrok http http://localhost:8080</code></p>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="6" onclick="toggleContent('guia9')"><img src="images/guia/tailwind.png" alt="img-tailwind" class="img-guia">  Tailwind</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="6" data-guia="guia9"><img src="images/guia/tailwind.png" alt="Tailwind CSS" class="img-guia">  Tailwind</a><br>
       <div id="guia9" class="guia">
         <p><strong>Tailwind CSS</strong> - Framework CSS utility-first para design rápido e customizável.</p>
-        <a href="https://tailwindcss.com/docs" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank">⚙️ GitHub Tailwind</a><br>
-        <a href="https://tailwindui.com/" target="_blank">🎨 Tailwind UI</a><br>
-        <a href="https://play.tailwindcss.com/" target="_blank">🔧 Playground Online</a><br>
+        <a href="https://tailwindcss.com/docs" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/tailwindlabs/tailwindcss" target="_blank" rel="noopener noreferrer">GitHub Tailwind</a><br>
+        <a href="https://tailwindui.com/" target="_blank" rel="noopener noreferrer">Tailwind UI</a><br>
+        <a href="https://play.tailwindcss.com/" target="_blank" rel="noopener noreferrer">Playground Online</a><br>
         <a href="download/tailwind.rar" class="btn-download">Exemplo Tailwind</a>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="7" onclick="toggleContent('guia10')"> <img src="images/guia/electron.png" alt="img-electron" class="img-guia"> Electron</a>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="7" data-guia="guia10"> <img src="images/guia/electron.png" alt="Electron" class="img-guia"> Electron</a>
       <div id="guia10" class="guia">
         <p><strong>Electron</strong> - Framework para criar apps desktop com HTML, CSS e JavaScript (Node.js).</p>
-        <a href="https://www.electronjs.org/docs" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/electron/electron" target="_blank">⚙️ GitHub Electron</a><br>
-        <a href="https://www.electronjs.org/apps" target="_blank">📦 Electron Apps</a><br>
-        <a href="https://electronforge.io/" target="_blank">🔧 Electron Forge</a><br>
+        <a href="https://www.electronjs.org/docs" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/electron/electron" target="_blank" rel="noopener noreferrer">GitHub Electron</a><br>
+        <a href="https://www.electronjs.org/apps" target="_blank" rel="noopener noreferrer">Electron Apps</a><br>
+        <a href="https://electronforge.io/" target="_blank" rel="noopener noreferrer">Electron Forge</a><br>
         <a href="download/electron.rar" class="btn-download">Exemplo Electron</a>
       </div><br>
 
-            <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" onclick="toggleContent('guia11')"> <img src="images/guia/flutter.png" alt="img-flutter" class="img-guia"> Flutter</a>
+            <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" data-guia="guia11"> <img src="images/guia/flutter.png" alt="Flutter" class="img-guia"> Flutter</a>
       <div id="guia11" class="guia">
         <p><strong>Flutter</strong> - Framework do Google para desenvolvimento de apps móveis, web e desktop a partir de uma única base de código.</p>
-        <a href="https://flutter.dev/docs" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/flutter/flutter" target="_blank">⚙️ GitHub Flutter</a><br>
-        <a href="https://dart.dev/" target="_blank">🎯 Linguagem Dart</a><br>
-        <a href="https://pub.dev/" target="_blank">📦 Pub.dev (Pacotes)</a><br>
-        <a href="https://flutter.dev/showcase" target="_blank">🎨 Showcase</a><br>
+        <a href="https://flutter.dev/docs" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/flutter/flutter" target="_blank" rel="noopener noreferrer">GitHub Flutter</a><br>
+        <a href="https://dart.dev/" target="_blank" rel="noopener noreferrer">Linguagem Dart</a><br>
+        <a href="https://pub.dev/" target="_blank" rel="noopener noreferrer">Pub.dev (Pacotes)</a><br>
+        <a href="https://flutter.dev/showcase" target="_blank" rel="noopener noreferrer">Showcase</a><br>
       </div><br><br>
 
 
 
       <h1 class="reveal" data-delay="8">Sistema operacional</h1><br>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" onclick="toggleContent('guia12')"><img src="images/guia/linux.png" alt="img-linux" class="img-guia">Linux</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" data-guia="guia12"><img src="images/guia/linux.png" alt="Linux" class="img-guia">Linux</a><br>
       <div id="guia12" class="guia">
         <p><strong>Linux</strong> - Sistema operacional open-source para desenvolvimento e servidores.</p>
-        <a href="https://www.kernel.org/" target="_blank">📖 Kernel Linux</a><br>
-        <a href="https://ubuntu.com/tutorials" target="_blank">🎓 Ubuntu Tutorials</a><br>
-        <a href="https://wiki.archlinux.org/" target="_blank">📚 Arch Wiki</a><br>
-        <a href="https://github.com/torvalds/linux" target="_blank">⚙️ GitHub Linus</a><br>
+        <a href="https://www.kernel.org/" target="_blank" rel="noopener noreferrer">Kernel Linux</a><br>
+        <a href="https://ubuntu.com/tutorials" target="_blank" rel="noopener noreferrer">Ubuntu Tutorials</a><br>
+        <a href="https://wiki.archlinux.org/" target="_blank" rel="noopener noreferrer">Arch Wiki</a><br>
+        <a href="https://github.com/torvalds/linux" target="_blank" rel="noopener noreferrer">GitHub Linus</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" onclick="toggleContent('guia13')"><img src="images/guia/kali.png" class="img-guia" alt="img-kali"> Kali Linux</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" data-guia="guia13"><img src="images/guia/kali.png" class="img-guia" alt="Kali Linux"> Kali Linux</a><br>
       <div id="guia13" class="guia">
         <p><strong>Kali Linux</strong> - Distribuição focada em segurança, testes de penetração e análise de vulnerabilidades.</p>
-        <a href="https://www.kali.org/docs/" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://gitlab.com/kalinux" target="_blank">⚙️ GitLab Kali</a><br>
-        <a href="https://www.kali.org/tools/" target="_blank">🔧 Ferramentas Kali</a><br>
-        <a href="https://www.offensive-security.com/" target="_blank">🛡️ Offensive Security</a><br>
+        <a href="https://www.kali.org/docs/" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://gitlab.com/kalinux" target="_blank" rel="noopener noreferrer">GitLab Kali</a><br>
+        <a href="https://www.kali.org/tools/" target="_blank" rel="noopener noreferrer">Ferramentas Kali</a><br>
+        <a href="https://www.offensive-security.com/" target="_blank" rel="noopener noreferrer">Offensive Security</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="11" onclick="toggleContent('guia14')"><img src="images/guia/macos.png" class="img-guia" alt="img-macOS"> macOS</a>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="11" data-guia="guia14"><img src="images/guia/macos.png" class="img-guia" alt="macOS"> macOS</a>
       <div id="guia14" class="guia">
         <p><strong>macOS</strong> - Sistema operacional Apple para desenvolvimento com ecossistema Apple.</p>
-        <a href="https://developer.apple.com/documentation/" target="_blank">📖 Apple Developer</a><br>
-        <a href="https://developer.apple.com/xcode/" target="_blank">🛠️ Xcode</a><br>
-        <a href="https://github.com/nicklockwood/SwiftFormat" target="_blank">⚙️ GitHub macOS Dev</a><br>
-        <a href="https://brew.sh/" target="_blank">🍺 Homebrew</a><br>
+        <a href="https://developer.apple.com/documentation/" target="_blank" rel="noopener noreferrer">Apple Developer</a><br>
+        <a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">Xcode</a><br>
+        <a href="https://github.com/nicklockwood/SwiftFormat" target="_blank" rel="noopener noreferrer">GitHub macOS Dev</a><br>
+        <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a><br>
       </div><br><br>
 
       <h1 class="reveal" data-delay="8">Firewall</h1><br>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" onclick="toggleContent('guia15')"><img src="images/guia/redes.webp" class="img-guia" alt="img-redes"> REDES</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" data-guia="guia15"><img src="images/guia/redes.webp" class="img-guia" alt="Redes"> REDES</a><br>
       <div id="guia15" class="guia">
         <p><strong>Redes</strong> - Princípios de redes, protocolos e comunicação para desenvolvedores.</p>
-        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP" target="_blank">📖 HTTP MDN</a><br>
-        <a href="https://tools.ietf.org/" target="_blank">📁 RFCs (IETF)</a><br>
-        <a href="https://www.cisco.com/c/en/us/solutions/what-is-a-network.html" target="_blank">🎓 Cisco Networking</a><br>
-        <a href="https://www.cloudflare.com/learning/" target="_blank">📚 Cloudflare Learning</a><br>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP" target="_blank" rel="noopener noreferrer">HTTP MDN</a><br>
+        <a href="https://tools.ietf.org/" target="_blank" rel="noopener noreferrer">RFCs (IETF)</a><br>
+        <a href="https://www.cisco.com/c/en/us/solutions/what-is-a-network.html" target="_blank" rel="noopener noreferrer">Cisco Networking</a><br>
+        <a href="https://www.cloudflare.com/learning/" target="_blank" rel="noopener noreferrer">Cloudflare Learning</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" onclick="toggleContent('guia16')"><img src="images/guia/seguranca.png" class="img-guia" alt="img-segurança"> Segurança</a>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" data-guia="guia16"><img src="images/guia/seguranca.png" class="img-guia" alt="Segurança"> Segurança</a>
       <div id="guia16" class="guia">
         <p><strong>Segurança</strong> - Boas práticas e proteção de aplicações web contra vulnerabilidades.</p>
-        <a href="https://owasp.org/www-project-top-ten/" target="_blank">🛡️ OWASP Top 10</a><br>
-        <a href="https://cve.mitre.org/" target="_blank">🔴 CVE Mitre</a><br>
-        <a href="https://portswigger.net/web-security" target="_blank">🎓 PortSwigger Web Security</a><br>
-        <a href="https://github.com/OWASP/owasp-masvs" target="_blank">⚙️ GitHub OWASP</a><br>
+        <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer">OWASP Top 10</a><br>
+        <a href="https://cve.mitre.org/" target="_blank" rel="noopener noreferrer">CVE Mitre</a><br>
+        <a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer">PortSwigger Web Security</a><br>
+        <a href="https://github.com/OWASP/owasp-masvs" target="_blank" rel="noopener noreferrer">GitHub OWASP</a><br>
       </div><br><br>
 
       <h1 class="reveal" data-delay="8">Servidor</h1><br>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" onclick="toggleContent('guia17')">XAMPP</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="8" data-guia="guia17">XAMPP</a><br>
       <div id="guia17" class="guia">
         <p><strong>XAMPP</strong> - Pacote de servidor local (Apache, MySQL, PHP, Perl) para desenvolvimento.</p>
-        <a href="https://www.apachefriends.org/docs/" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/ApacheFriends/xampp" target="_blank">⚙️ GitHub XAMPP</a><br>
-        <a href="https://www.apachefriends.org/faq.html" target="_blank">❓ FAQ</a><br>
+        <a href="https://www.apachefriends.org/docs/" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/ApacheFriends/xampp" target="_blank" rel="noopener noreferrer">GitHub XAMPP</a><br>
+        <a href="https://www.apachefriends.org/faq.html" target="_blank" rel="noopener noreferrer">FAQ</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" onclick="toggleContent('guia18')">API</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="9" data-guia="guia18">API</a><br>
       <div id="guia18" class="guia">
         <p><strong>API</strong> - Interfaces de programação para comunicação entre sistemas (REST, GraphQL, etc).</p>
-        <a href="https://restfulapi.net/" target="_blank">📖 REST API Tutorial</a><br>
-        <a href="https://graphql.org/learn/" target="_blank">📁 GraphQL Docs</a><br>
-        <a href="https://github.com/public-apis/public-apis" target="_blank">⚙️ APIs Públicas GitHub</a><br>
-        <a href="https://swagger.io/docs/" target="_blank">🔧 Swagger/OpenAPI</a><br>
+        <a href="https://restfulapi.net/" target="_blank" rel="noopener noreferrer">REST API Tutorial</a><br>
+        <a href="https://graphql.org/learn/" target="_blank" rel="noopener noreferrer">GraphQL Docs</a><br>
+        <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">APIs Públicas GitHub</a><br>
+        <a href="https://swagger.io/docs/" target="_blank" rel="noopener noreferrer">Swagger/OpenAPI</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" onclick="toggleContent('guia19')">Apache</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" data-guia="guia19">Apache</a><br>
       <div id="guia19" class="guia">
         <p><strong>Apache HTTP Server</strong> - Servidor web open-source robusto e modular, usado para hospedar sites e aplicações.</p>
-        <a href="https://httpd.apache.org/docs/" target="_blank">📖 Documentação Oficial</a><br>
-        <a href="https://github.com/apache/httpd" target="_blank">⚙️ GitHub Apache</a><br>
-        <a href="https://httpd.apache.org/docs/2.4/mod/" target="_blank">🔧 Módulos Apache</a><br>
+        <a href="https://httpd.apache.org/docs/" target="_blank" rel="noopener noreferrer">Documentação Oficial</a><br>
+        <a href="https://github.com/apache/httpd" target="_blank" rel="noopener noreferrer">GitHub Apache</a><br>
+        <a href="https://httpd.apache.org/docs/2.4/mod/" target="_blank" rel="noopener noreferrer">Módulos Apache</a><br>
       </div>
 
-      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" onclick="toggleContent('guia20')">ChatBot</a><br>
+      <a href="javascript:void(0)" class="link-guia reveal" data-delay="10" data-guia="guia20">ChatBot</a><br>
       <div id="guia20" class="guia">
         <p><strong>ChatBot</strong> - Bot de conversação para atendimento automatizado e interação com usuários.</p>
-        <a href="https://docs.microsoft.com/pt-br/azure/bot-service/" target="_blank">📖 Azure Bot Service</a><br>
-        <a href="https://cloud.google.com/dialogflow/docs" target="_blank">📁 Dialogflow (Google)</a><br>
-        <a href="https://github.com/microsoft/botframework-sdk" target="_blank">⚙️ GitHub Bot Framework</a><br>
-        <a href="https://rasa.com/docs/" target="_blank">🎓 Rasa Open Source</a><br>
+        <a href="https://docs.microsoft.com/pt-br/azure/bot-service/" target="_blank" rel="noopener noreferrer">Azure Bot Service</a><br>
+        <a href="https://cloud.google.com/dialogflow/docs" target="_blank" rel="noopener noreferrer">Dialogflow (Google)</a><br>
+        <a href="https://github.com/microsoft/botframework-sdk" target="_blank" rel="noopener noreferrer">GitHub Bot Framework</a><br>
+        <a href="https://rasa.com/docs/" target="_blank" rel="noopener noreferrer">Rasa Open Source</a><br>
+      </div>
       </div>
     </div>
 
     <div class="content" id="div3"> <!-- Portfólio -->
       <div class="portfolio">
         <div class="link-loja reveal-scale" data-delay="0">
-          <img src="images/portfolio/audify.jpeg" alt="foto" class="img-portfolio" style="width: 30%;">
+          <img src="images/portfolio/audify.jpeg" alt="Audify - Aplicativo de Música" class="img-portfolio" style="width: 30%;">
           <h1><a href="download/audify.apk" class="btn-download">audify - Aplicativo de Música</a></h1>
           <p>Flutter</p>
         </div>
         <div class="link-loja reveal-scale" data-delay="1">
-          <img src="images/portfolio/saas-mesa.png" alt="foto" class="img-portfolio">
-          <h1><a href="https://github.com/gpwebsolution/saas-mesa" target="_blank">Saas - Mesa</a></h1>
+          <img src="images/portfolio/saas-mesa.png" alt="Saas Mesa - Sistema de Delivery" class="img-portfolio">
+          <h1><a href="https://github.com/gpwebsolution/saas-mesa" target="_blank" rel="noopener noreferrer">Saas - Mesa</a></h1>
           <p>DELIVERY</p>
         </div>
         <div class="link-loja reveal-scale" data-delay="2">
-          <img src="images/portfolio/gpweb-bet.png" alt="foto" class="img-portfolio">
-          <h1><a href="https://github.com/gpwebsolution/gpweb-bet" target="_blank">GPWeb - BET</a></h1>
+          <img src="images/portfolio/gpweb-bet.png" alt="GPWeb BET - Cassino Online" class="img-portfolio">
+          <h1><a href="https://github.com/gpwebsolution/gpweb-bet" target="_blank" rel="noopener noreferrer">GPWeb - BET</a></h1>
           <p>Cassino Online</p>
         </div>
         <div class="link-loja reveal-scale" data-delay="3">
-          <img src="images/portfolio/ecommerce.png" alt="foto" class="img-portfolio">
-          <h1><a href="https://github.com/gpwebsolution/ecommerce" target="_blank">ECOMMERCE</a></h1>
+          <img src="images/portfolio/ecommerce.png" alt="Ecommerce - Loja Online" class="img-portfolio">
+          <h1><a href="https://github.com/gpwebsolution/ecommerce" target="_blank" rel="noopener noreferrer">ECOMMERCE</a></h1>
           <p>Loja pessoal</p>
         </div>
 
@@ -332,21 +358,64 @@
     </div>
 
     <div class="content" id="div4"> <!-- Contato -->
-      <h2>Localização</h2>
-      <iframe id="map"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-49.8465, -21.6614, -49.7465, -21.5814, -23.472&layer=mapnik&marker=-21.6214,-49.7965"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
+      <h2 class="reveal">Localização</h2>
+      <div class="map-wrapper reveal" data-delay="1">
+        <iframe id="map"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-49.85,-21.67,-49.75,-21.58&layer=mapnik&marker=-21.62,-49.80"
+          allowfullscreen
+          loading="lazy"
+          title="Localização - Guaiçara, São Paulo">
+        </iframe>
+      </div>
+
+      <h2 class="reveal" data-delay="2">Redes Sociais</h2>
+
+      <div class="social-grid">
+        <a href="https://www.facebook.com/profile.php?id=61580637924160" target="_blank" rel="noopener noreferrer" class="social-card reveal-scale" data-delay="3">
+          <img src="images/facebook.jpg" alt="Facebook" class="social-card-img">
+          <div class="social-card-info">
+            <h3>Facebook</h3>
+            <p>Conecte-se comigo</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/gpwebsolution/" target="_blank" rel="noopener noreferrer" class="social-card reveal-scale" data-delay="4">
+          <img src="images/instagram.jpg" alt="Instagram" class="social-card-img">
+          <div class="social-card-info">
+            <h3>Instagram</h3>
+            <p>Acompanhe meu trabalho</p>
+          </div>
+        </a>
+
+        <a href="https://www.youtube.com/@gpwebsolution" target="_blank" rel="noopener noreferrer" class="social-card social-card--youtube reveal-scale" data-delay="5">
+          <div class="social-card-icon social-card-icon--youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <div class="social-card-info">
+            <h3>YouTube</h3>
+            <p>Vídeos e tutoriais</p>
+          </div>
+        </a>
+
+        <a href="https://github.com/gpwebsolution" target="_blank" rel="noopener noreferrer" class="social-card reveal-scale" data-delay="6">
+          <div class="social-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="social-card-info">
+            <h3>GitHub</h3>
+            <p>Projetos e código</p>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <nav class="nav-menu">
     <ul class="menu" id="buttons">
-      <li><a href="javascript:void(0)" class="a-menu sobre" onclick="showDiv('div1')">Sobre</a></li>
-      <li><a href="javascript:void(0)" class="a-menu" onclick="showDiv('div2')">Guia</a></li>
-      <li><a href="javascript:void(0)" class="a-menu" onclick="showDiv('div3')">Portfólio</a></li>
-      <li><a href="javascript:void(0)" class="a-menu contato" onclick="showDiv('div4')">Contato</a></li>
+      <li><a href="javascript:void(0)" class="a-menu sobre" data-section="div1">Sobre</a></li>
+      <li><a href="javascript:void(0)" class="a-menu" data-section="div2">Guia</a></li>
+      <li><a href="javascript:void(0)" class="a-menu" data-section="div3">Portfólio</a></li>
+      <li><a href="javascript:void(0)" class="a-menu contato" data-section="div4">Contato</a></li>
     </ul>
   </nav>
 
@@ -365,6 +434,12 @@
         </div>
   </div>
 
+  <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+    <span class="icon-sun">&#9728;</span>
+    <span class="icon-moon">&#9790;</span>
+  </button>
+
+  <script src="js/theme-toggle.js"></script>
   <script src="js/showMenu.js"></script>
   <script src="js/guia.js"></script>
   <script src="js/show-contacts.js"></script>

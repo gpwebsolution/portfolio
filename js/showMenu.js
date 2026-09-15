@@ -12,7 +12,7 @@
     });
 
     document.querySelectorAll('.a-menu').forEach(function (item) {
-      if (item.getAttribute('onclick') && item.getAttribute('onclick').indexOf(divId) !== -1) {
+      if (item.getAttribute('data-section') === divId) {
         item.classList.add('active');
       }
     });
@@ -61,7 +61,14 @@
     var firstMenu = document.querySelector('.a-menu.sobre');
     if (firstMenu) firstMenu.classList.add('active');
 
-    // Animate SVGs on content change
+    document.querySelectorAll('.a-menu[data-section]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var sectionId = this.getAttribute('data-section');
+        showDiv(sectionId);
+      });
+    });
+
     document.querySelectorAll('.a-menu').forEach(function (link) {
       link.addEventListener('click', function () {
         setTimeout(function () {

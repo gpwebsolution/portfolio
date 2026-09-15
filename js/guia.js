@@ -73,4 +73,43 @@
   }
 
   window.toggleContent = toggleContent;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.link-guia[data-guia]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        var guiaId = this.getAttribute('data-guia');
+        toggleContent(guiaId);
+      });
+    });
+
+    var searchInput = document.getElementById('guia-search');
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        var query = this.value.toLowerCase().trim();
+        var links = document.querySelectorAll('.link-guia[data-guia]');
+
+        links.forEach(function (link) {
+          var text = link.textContent.toLowerCase();
+          var guiaId = link.getAttribute('data-guia');
+          var panel = document.getElementById(guiaId);
+          var wrapper = link.parentNode;
+
+          if (!query || text.indexOf(query) !== -1) {
+            link.style.display = '';
+            if (link.nextSibling && link.nextSibling.tagName === 'BR') {
+              link.nextSibling.style.display = '';
+            }
+            if (panel) panel.style.display = '';
+          } else {
+            link.style.display = 'none';
+            if (link.nextSibling && link.nextSibling.tagName === 'BR') {
+              link.nextSibling.style.display = 'none';
+            }
+            if (panel) panel.style.display = 'none';
+          }
+        });
+      });
+    }
+  });
 })();
